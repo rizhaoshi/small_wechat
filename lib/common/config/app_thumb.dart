@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 import 'app_colors.dart';
 
 final ThemeData theme = ThemeData(
-  primaryColor: AppColors.primary,
   // 主题色
-  scaffoldBackgroundColor: AppColors.page,
+  primaryColor: AppColors.primary,
+
   // 脚手架下的页面背景色
-  indicatorColor: AppColors.active,
+  scaffoldBackgroundColor: AppColors.page,
+
   // 选项卡栏中所选选项卡指示器的颜色。
+  indicatorColor: AppColors.active,
+  // 卡片颜色
+  cardColor: AppColors.card,
 
   // ElevatedButton 主题
   elevatedButtonTheme: ElevatedButtonThemeData(
@@ -59,14 +63,19 @@ final ThemeData theme = ThemeData(
   ),
 
   bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-    backgroundColor: Colors.white,
-    selectedItemColor: AppColors.primary,
-    unselectedItemColor: AppColors.color_hint,
+    backgroundColor: AppColors.primary,
+    selectedItemColor: AppColors.success,
+    unselectedItemColor: AppColors.active,
     selectedLabelStyle: TextStyle(
       height: 1.6,
-      fontSize: 13,
+      fontSize: 12,
     ),
-    unselectedLabelStyle: TextStyle(fontSize: 13, height: 1.6),
+    unselectedLabelStyle: TextStyle(fontSize: 12, height: 1.6),
   ),
-  colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.white, primary: AppColors.primary, onPrimary: Colors.white),
+
+  colorScheme: ColorScheme.fromSwatch().copyWith(
+    secondary: Colors.white,
+    primary: AppColors.primary,
+    onPrimary: Colors.white,
+  ),
 );

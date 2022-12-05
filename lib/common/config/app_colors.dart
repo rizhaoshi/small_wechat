@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static const Color primary = Color(0xff155EFF);
-  static const Color primary_pass = Color(0x7D155EFF);
+  static const Color primary = Color(0xff303030);
+  static const Color primary_pass = Color(0x7D303030);
   static const Color active = Color(0xffF9FAFB);
-  static const Color success = Color(0xff07c160);
+  static const Color success = Color(0xff46c11b);
   static const Color danger = Color(0xffee0a24);
   static const Color warning = Color(0xffffba00);
   static const Color info = Color(0xff00a1d6);
-  static const Color page = Color(0xfff7f7f7);
+  static const Color page = Color(0xffebebeb);
+  static const Color card = Color(0xff393a3f);
   static const Color nav = Color(0xfffbfbfb);
   static const Color border = Color(0xfff5f5f5);
   static const Color black_15 = Color(0x26000000);

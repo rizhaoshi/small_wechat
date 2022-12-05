@@ -1,7 +1,9 @@
 import 'package:get/get.dart';
 
-import '../modules/home/home_binding.dart';
-import '../modules/home/home_page.dart';
+import '../modules/address/address_binding.dart';
+import '../modules/address/address_page.dart';
+import '../modules/found/found_binding.dart';
+import '../modules/found/found_page.dart';
 import '../modules/login/login_binding.dart';
 import '../modules/login/login_page.dart';
 import '../modules/main/main_binding.dart';
@@ -14,6 +16,8 @@ import '../modules/splash/splash_binding.dart';
 import '../modules/splash/splash_page.dart';
 import '../modules/tool/tool_binding.dart';
 import '../modules/tool/tool_page.dart';
+import '../modules/wechat/wechat_binding.dart';
+import '../modules/wechat/wechat_page.dart';
 import 'app_routes.dart';
 
 class AppPages {
@@ -31,11 +35,6 @@ class AppPages {
       name: Routes.SPLASH,
       page: () => const SplashPage(),
       binding: SplashBinding(),
-    ),
-    GetPage(
-      name: Routes.HOME,
-      page: () => const HomePage(),
-      binding: HomeBinding(),
     ),
     GetPage(
       name: Routes.MINE,
@@ -56,6 +55,21 @@ class AppPages {
       name: Routes.TOOL,
       page: () => const ToolPage(),
       binding: ToolBinding(),
+    ),
+    GetPage(
+      name: Routes.WECHAT,
+      page: () => const WechatPage(),
+      binding: WechatBinding(),
+    ),
+    GetPage(
+      name: Routes.ADDRESS,
+      page: () => const AddressPage(),
+      binding: AddressBinding(),
+    ),
+    GetPage(
+      name: Routes.FOUND,
+      page: () => const FoundPage(),
+      binding: FoundBinding(),
     ),
   ];
 }
