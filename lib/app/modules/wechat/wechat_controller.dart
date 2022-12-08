@@ -1,9 +1,10 @@
 import 'package:get/get.dart';
 
-class WechatController extends GetxController {
-  //TODO: Implement WechatController
+import '../../model/conversation.dart';
 
-  final count = 0.obs;
+class WechatController extends GetxController {
+  ConversationPageData data = ConversationPageData.mock();
+
   @override
   void onInit() {
     super.onInit();
@@ -18,6 +19,4 @@ class WechatController extends GetxController {
   void onClose() {
     super.onClose();
   }
-
-  void increment() => count.value++;
 }

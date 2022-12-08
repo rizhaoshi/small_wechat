@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:small_wechat/common/utils/common_util.dart';
 
 import '../../common/config/app_colors.dart';
+import '../../common/utils/common_util.dart';
 
 enum Device { MAC, WIN }
 
@@ -57,8 +57,8 @@ class ConversationPageData {
       des: '豪车与出租车刮擦 俩车主划拳定责',
       updateAt: '17:20',
     ),
-    const Conversation(
-      avatar: 'assets/images/ic_wx_games.png',
+    Conversation(
+      avatar: CommonUtils.getIconByName("ic_wx_games"),
       title: '微信游戏',
       titleColor: Color(0xff586b95),
       des: '25元现金助力开学季！',
@@ -80,7 +80,7 @@ class ConversationPageData {
       isMute: false,
       unreadMsgCount: 3,
     ),
-     Conversation(
+    Conversation(
       avatar: CommonUtils.getIconByName("ic_fengchao"),
       title: '蜂巢智能柜',
       titleColor: Color(0xff586b95),
@@ -88,8 +88,8 @@ class ConversationPageData {
       updateAt: '17:12',
     ),
     const Conversation(
-      avatar: 'https://randomuser.me/api/portraits/women/57.jpg',
-      title: 'Lily',
+      avatar: 'https://randomuser.me/api/portraits/women/17.jpg',
+      title: 'yiyi',
       des: '让我给她看代码，就截了三张图',
       updateAt: '昨天',
       isMute: false,
